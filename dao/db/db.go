@@ -10,7 +10,7 @@ var DB *sqlx.DB
 
 // 数据库初始化
 func Init() (err error) {
-	dns := "go_user:Cernet@goadmin@tcp(10.227.10.78:3399)/blog?charset=utf8&parseTime=True&loc=Local&timeout=1000ms"
+	dns := "go_user:XXXX@goadmin@tcp(10.227.10.78:3399)/blog?charset=utf8&parseTime=True&loc=Local&timeout=1000ms"
 	DB, err = sqlx.Connect("mysql", dns)
 	if err != nil {
 		log.Fatal("Connect database failed.", err)
